@@ -1,9 +1,8 @@
 import React from "react";
-
-import "./App.css";
+import Home from "./components/homePage/Home";
 
 function App() {
-  return <div className="App">My portfolio</div>;
+  return <Home />;
 }
 
 export default App;
