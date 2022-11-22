@@ -9,6 +9,7 @@ export const NavContainer = styled.nav`
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 2;
 `;
 
 export const NavLogo = styled.div`
