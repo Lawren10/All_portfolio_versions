@@ -41,9 +41,24 @@ export const IconsContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1rem;
+  margin-top: 2rem;
 `;
 
-export const Icon = styled.i`
-  width: 1rem;
+export const Icon = styled.img`
+  width: 1.5rem;
+  cursor: pointer;
+  &:hover {
+    transform: translateY(0.5rem);
+    transition: transform 0.2s ease-in-out;
+  }
+`;
+export const SocialIconsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  color: white;
 `;

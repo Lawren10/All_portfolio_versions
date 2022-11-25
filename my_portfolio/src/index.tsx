@@ -4,6 +4,8 @@ import {ThemeProvider} from "styled-components";
 import {myTheme} from "./GlobalStyles/globalStylesandTheme";
 import {GlobalStyle} from "./GlobalStyles/globalStylesandTheme";
 import App from "./App";
+import PortfolioContext from "./context/PortfolioContext";
+import {BrowserRouter} from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(
@@ -12,9 +14,13 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <GlobalStyle />
-    <ThemeProvider theme={myTheme}>
-      <App />
-    </ThemeProvider>
+    <BrowserRouter>
+      <PortfolioContext>
+        <ThemeProvider theme={myTheme}>
+          <App />
+        </ThemeProvider>
+      </PortfolioContext>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

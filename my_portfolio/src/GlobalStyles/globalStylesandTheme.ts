@@ -3,6 +3,7 @@ import {DefaultTheme, createGlobalStyle} from "styled-components";
 export const myTheme: DefaultTheme = {
   colors: {
     logo: "cyan",
+    bgColor: "#000816",
   },
 };
 
