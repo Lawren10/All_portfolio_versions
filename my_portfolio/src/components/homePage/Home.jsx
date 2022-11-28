@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Navigation from "../navigation/Navigation";
+
 import {
   HomeContainer,
   Avatar,
@@ -10,20 +11,30 @@ import {
   Icon,
   SocialIconsContainer,
 } from "./homeStyles";
-
-// import {usePortfolioGlobalContext} from "../../context/PortfolioContext";
+import {usePortfolioGlobalContext} from "../../context/PortfolioContext";
 
 function Home() {
+  let {state, dispatch} = usePortfolioGlobalContext();
+
+  useEffect(() => {
+    dispatch({type: "SET_TRANSITION_DOWN"});
+  }, []);
+
   return (
     <>
-      <Navigation />
       <HomeContainer>
+        <Navigation />
         <Avatar src="/images/portfolioavatar.png" />
         <DescContainer>
           <Name>Lawrence Ogereka</Name>
           <JobTitle>Software Developer</JobTitle>
           <IconsContainer>
-            <Icon src="/images/html.png" />
+            <Icon
+              src="/images/html.png"
+              onClick={() => {
+                // dispatch();
+              }}
+            />
             <Icon src="/images/css3.png" />
             <Icon src="/images/sass.png" />
             <Icon src="/images/javascript.png" />

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Link} from "react-router-dom";
 
 export const NavContainer = styled.nav`
   width: 100%;
@@ -24,7 +25,9 @@ export const NavItemsContainer = styled.ul`
   list-style-type: none;
 `;
 
-export const NavItem = styled.li`
+export const NavItem = styled(Link)`
+  color: white;
+  text-decoration: none;
   font-weight: 300;
   cursor: pointer;
   &:hover {

@@ -18,5 +18,6 @@ body{
  background-color:#000816;
  color:white;
  font-family:'Syne', sans-serif;
+ overflow:hidden;
 }
 `;
