@@ -16,9 +16,9 @@ export const portfolioReducer = (
 ) => {
   switch (action.type) {
     case "SET_TRANSITION_DOWN":
-      return {...state, setTransition: true};
+      return { ...state, setTransition: true };
     case "SET_TRANSITION_UP":
-      return {...state, setTransition: false};
+      return { ...state, setTransition: false };
     default:
       return state;
   }

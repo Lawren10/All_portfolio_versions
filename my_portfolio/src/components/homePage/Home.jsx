@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import Navigation from "../navigation/Navigation";
 
 import {
@@ -11,13 +11,13 @@ import {
   Icon,
   SocialIconsContainer,
 } from "./homeStyles";
-import {usePortfolioGlobalContext} from "../../context/PortfolioContext";
+import { usePortfolioGlobalContext } from "../../context/PortfolioContext";
 
 function Home() {
-  let {state, dispatch} = usePortfolioGlobalContext();
+  let { state, dispatch } = usePortfolioGlobalContext();
 
   useEffect(() => {
-    dispatch({type: "SET_TRANSITION_DOWN"});
+    dispatch({ type: "SET_TRANSITION_DOWN" });
   }, []);
 
   return (

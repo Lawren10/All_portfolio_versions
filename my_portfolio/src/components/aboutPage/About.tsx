@@ -1,25 +1,36 @@
-import React, {useEffect} from "react";
-import {AboutContainer} from "./aboutStyles";
-import {usePortfolioGlobalContext} from "../../context/PortfolioContext";
-import {ReturnBtnCont, ReturnBtn} from "../../GlobalStyles/commonStyle";
+import React from "react";
+import {} from "./aboutStyles";
+import { usePortfolioGlobalContext } from "../../context/PortfolioContext";
+import {
+  ReturnBtnCont,
+  ReturnBtn,
+  MainContainer,
+  HeaderContainer,
+  HeaderTopTitle,
+  HeaderLargeTitle,
+} from "../../GlobalStyles/commonStyle";
 
 function About() {
-  let {state, dispatch} = usePortfolioGlobalContext();
+  let { dispatch } = usePortfolioGlobalContext();
 
   return (
     <>
-      <AboutContainer>
+      <MainContainer>
         <ReturnBtnCont>
           <ReturnBtn
             to="/"
             onClick={() => {
-              dispatch({type: "SET_TRANSITION_DOWN"});
+              dispatch({ type: "SET_TRANSITION_DOWN" });
             }}
           >
             x
           </ReturnBtn>
         </ReturnBtnCont>
-      </AboutContainer>
+        <HeaderContainer>
+          <HeaderTopTitle>Get to know me</HeaderTopTitle>
+          <HeaderLargeTitle>About Me</HeaderLargeTitle>
+        </HeaderContainer>
+      </MainContainer>
     </>
   );
 }
