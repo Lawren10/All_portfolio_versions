@@ -63,17 +63,21 @@ export const MainContainer = styled.section`
 export const HeaderContainer = styled.header`
   padding: 1.5rem;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 `;
 export const HeaderTopTitle = styled.p`
   font-size: 1rem;
 `;
 export const HeaderLargeTitle = styled.h4`
   font-size: 2rem;
-  margin: 0.8rem 0 1.5rem 0;
+  margin: 0.8rem 0 0.6rem 0;
 `;
 
 export const HeaderTitleUnderline = styled.div`
   width: 4rem;
-  height: 0.8rem;
-  background-color: ;
+  height: 0.2rem;
+  background-color: #03132c;
 `;
