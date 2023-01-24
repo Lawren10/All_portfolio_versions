@@ -2,7 +2,7 @@ import React from "react";
 import {} from "./aboutStyles";
 import { usePortfolioGlobalContext } from "../../context/PortfolioContext";
 import {
-  ReturnBtnCont,
+  // ReturnBtnCont,
   ReturnBtn,
   MainContainer,
   HeaderContainer,
@@ -13,6 +13,7 @@ import {
 import {
   AboutContainer,
   AboutVisualContainer,
+  AboutImage,
   AboutDetailContainer,
   AboutAsk,
   AboutResponse,
@@ -30,16 +31,15 @@ function About() {
   return (
     <>
       <MainContainer>
-        <ReturnBtnCont>
-          <ReturnBtn
-            to="/"
-            onClick={() => {
-              dispatch({ type: "SET_TRANSITION_DOWN" });
-            }}
-          >
-            x
-          </ReturnBtn>
-        </ReturnBtnCont>
+        <ReturnBtn
+          to="/"
+          onClick={() => {
+            dispatch({ type: "SET_TRANSITION_DOWN" });
+          }}
+        >
+          x
+        </ReturnBtn>
+
         <HeaderContainer>
           <HeaderTopTitle>Get to know me</HeaderTopTitle>
           <HeaderLargeTitle>About Me</HeaderLargeTitle>
@@ -47,7 +47,9 @@ function About() {
         </HeaderContainer>
 
         <AboutContainer>
-          <AboutVisualContainer></AboutVisualContainer>
+          <AboutVisualContainer>
+            <AboutImage></AboutImage>
+          </AboutVisualContainer>
           <AboutDetailContainer>
             <AboutAsk>Who am i?</AboutAsk>
             <AboutResponse>

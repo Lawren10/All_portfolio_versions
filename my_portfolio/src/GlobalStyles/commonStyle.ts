@@ -16,14 +16,14 @@ to{
 }
 `;
 
-const TransitionDown = keyframes`
-from{
-  transform: translateY(-100%);
-}
-to{
-  transform: translateY(0%);
-}
-`;
+// const TransitionDown = keyframes`
+// from{
+//   transform: translateY(-100%);
+// }
+// to{
+//   transform: translateY(0%);
+// }
+// `;
 
 export const PageTransition = styled.section<{ transition: boolean }>`
   position: absolute;
@@ -41,6 +41,9 @@ export const PageTransition = styled.section<{ transition: boolean }>`
 `;
 
 export const ReturnBtn = styled(Link)`
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
   color: white;
   text-decoration: none;
   font-size: 2.5rem;
@@ -58,9 +61,24 @@ export const ReturnBtnCont = styled.nav`
 export const MainContainer = styled.section`
   width: 100vw;
   height: 100vh;
+  overflow-y: scroll;
+  padding-bottom: 2rem;
+  &::-webkit-scrollbar {
+    width: 0.3rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #010711;
+    border-radius: 0.5rem;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: ${(props) => props.theme.colors.main};
+    border-radius: 0.5rem;
+  }
 `;
 
 export const HeaderContainer = styled.header`
+  margin-top: 2rem;
   padding: 1.5rem;
   text-align: center;
   display: flex;
@@ -79,5 +97,5 @@ export const HeaderLargeTitle = styled.h4`
 export const HeaderTitleUnderline = styled.div`
   width: 4rem;
   height: 0.2rem;
-  background-color: #03132c;
+  background-color: ${(props) => props.theme.colors.main};
 `;

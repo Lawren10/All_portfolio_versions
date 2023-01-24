@@ -6,6 +6,9 @@ declare module "styled-components" {
     colors: {
       logo: string;
       bgColor: string;
+      main: string;
+      header: string;
+      body: string;
     };
   }
 }
