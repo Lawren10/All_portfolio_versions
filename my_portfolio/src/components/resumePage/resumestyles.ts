@@ -69,3 +69,32 @@ export const ResumeItemPointer = styled.span`
     position: absolute;
   }
 `;
+
+export const ResumeSkillCont = styled.section`
+  padding: 6rem 1rem 1rem 4rem;
+`;
+
+export const SkillItemsCont = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+`;
+
+export const SkillItemCont = styled.div`
+  text-align: center;
+  padding: 1rem 2rem;
+  background-color: #010711;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 0 0 #000103;
+`;
+export const SkillItemImage = styled.img`
+  width: 4.5rem;
+  margin-bottom: 1rem;
+`;
+export const SkillItemName = styled.h6`
+  font-size: 0.8rem;
+  color: ${(props) => props.theme.colors.body};
+`;
