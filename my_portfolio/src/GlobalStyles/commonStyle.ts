@@ -16,14 +16,14 @@ to{
 }
 `;
 
-// const TransitionDown = keyframes`
-// from{
-//   transform: translateY(-100%);
-// }
-// to{
-//   transform: translateY(0%);
-// }
-// `;
+const TransitionDown = keyframes`
+from{
+  transform: translateY(-100%);
+}
+to{
+  transform: translateY(100%);
+}
+`;
 
 export const PageTransition = styled.section<{ transition: boolean }>`
   position: absolute;
@@ -36,18 +36,33 @@ export const PageTransition = styled.section<{ transition: boolean }>`
     transition
       ? css``
       : css`
-          ${TransitionUp} 1s linear forwards
+          ${TransitionUp} 1.5s ease-in-out forwards
         `};
+`;
+
+export const PageTransitionDown = styled.section<{ transition: boolean }>`
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 100;
+  top: 100%;
+  animation: ${({ transition }) =>
+    transition
+      ? css`
+          ${TransitionDown} 1.5s ease-in-out forwards
+        `
+      : css``};
 `;
 
 export const ReturnBtn = styled(Link)`
   position: absolute;
-  top: 1rem;
-  right: 1.5rem;
+  top: 2rem;
+  right: 3rem;
   color: white;
   text-decoration: none;
-  font-size: 2.5rem;
-  font-weight: 200;
+  /* font-size: 2.5rem; */
+  /* font-weight: 200; */
 `;
 
 export const ReturnBtnCont = styled.nav`

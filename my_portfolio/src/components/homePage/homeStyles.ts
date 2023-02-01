@@ -19,9 +19,9 @@ export const Avatar = styled.img`
 
 export const DescContainer = styled.aside`
   position: absolute;
-  top: 40%;
+  top: 50%;
   right: 5rem;
-  transform: translateY(-40%);
+  transform: translateY(-50%);
   /* border: 1px solid red; */
 `;
 export const Name = styled.h1`

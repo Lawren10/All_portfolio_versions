@@ -27,8 +27,22 @@ function Navigation() {
           >
             Resume
           </NavItem>
-          <NavItem to="/Portfolio">Portfolio</NavItem>
-          <NavItem to="/Contact">Contact</NavItem>
+          <NavItem
+            to="/Portfolio"
+            onClick={() => {
+              dispatch({ type: "SET_TRANSITION_UP" });
+            }}
+          >
+            Portfolio
+          </NavItem>
+          <NavItem
+            to="/Contact"
+            onClick={() => {
+              dispatch({ type: "SET_TRANSITION_UP" });
+            }}
+          >
+            Contact
+          </NavItem>
         </NavItemsContainer>
       </NavContainer>
     </>

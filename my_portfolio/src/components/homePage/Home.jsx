@@ -7,14 +7,14 @@ import {
   DescContainer,
   Name,
   JobTitle,
-  IconsContainer,
-  Icon,
+  // IconsContainer,
+  // Icon,
   SocialIconsContainer,
 } from "./homeStyles";
 import { usePortfolioGlobalContext } from "../../context/PortfolioContext";
 
 function Home() {
-  let { state, dispatch } = usePortfolioGlobalContext();
+  let { dispatch } = usePortfolioGlobalContext();
 
   useEffect(() => {
     dispatch({ type: "SET_TRANSITION_DOWN" });
@@ -28,7 +28,7 @@ function Home() {
         <DescContainer>
           <Name>Lawrence Ogereka</Name>
           <JobTitle>Software Developer</JobTitle>
-          <IconsContainer>
+          {/* <IconsContainer>
             <Icon
               src="/images/html.png"
               onClick={() => {
@@ -45,7 +45,7 @@ function Home() {
             <Icon src="/images/mongodb.png" />
             <Icon src="/images/mysql.png" />
             <Icon src="/images/graphql.png" />
-          </IconsContainer>
+          </IconsContainer> */}
         </DescContainer>
         <SocialIconsContainer></SocialIconsContainer>
       </HomeContainer>

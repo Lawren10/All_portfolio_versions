@@ -25,6 +25,8 @@ import {
   DownloadCvBtn,
 } from "./aboutStyles";
 
+import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
+
 function About() {
   let { dispatch } = usePortfolioGlobalContext();
 
@@ -37,7 +39,7 @@ function About() {
             dispatch({ type: "SET_TRANSITION_DOWN" });
           }}
         >
-          x
+          <CloseRoundedIcon sx={{ fontSize: "2.5rem", fontWeight: 100 }} />
         </ReturnBtn>
 
         <HeaderContainer>
