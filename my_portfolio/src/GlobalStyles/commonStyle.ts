@@ -61,6 +61,7 @@ export const ReturnBtn = styled(Link)`
   right: 3rem;
   color: white;
   text-decoration: none;
+  z-index: 5;
   /* font-size: 2.5rem; */
   /* font-weight: 200; */
 `;

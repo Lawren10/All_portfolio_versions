@@ -1,5 +1,4 @@
 import React from "react";
-import {} from "./aboutStyles";
 import { usePortfolioGlobalContext } from "../../context/PortfolioContext";
 import {
   // ReturnBtnCont,
