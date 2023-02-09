@@ -15,9 +15,18 @@ import {
   ContactHeader,
   ContactFormCont,
   ContactAddressCont,
+  ContactTextDesc,
+  ContactItemCont,
+  ContactDescCont,
+  ContactItemTittle,
+  ContactItemText,
 } from "./contactStyles";
 
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
+import PersonPinRoundedIcon from "@mui/icons-material/PersonPinRounded";
+import LocationCityRoundedIcon from "@mui/icons-material/LocationCityRounded";
+import CallRoundedIcon from "@mui/icons-material/CallRounded";
+import MarkEmailReadRoundedIcon from "@mui/icons-material/MarkEmailReadRounded";
 
 function Contact() {
   let { dispatch } = usePortfolioGlobalContext();
@@ -41,10 +50,46 @@ function Contact() {
       <ContactContainer>
         <ContactAddressCont>
           <ContactHeader align="false">Contact Info</ContactHeader>
+
+          <ContactTextDesc>
+            Always available for freelance work if the right project comes along
+            or job prospects, Feel free to contact me!
+          </ContactTextDesc>
+
+          <ContactItemCont>
+            <PersonPinRoundedIcon sx={{ fontSize: "2.5rem" }} />
+            <ContactDescCont>
+              <ContactItemTittle>Name:</ContactItemTittle>
+              <ContactItemText>Lawrence Ogereka</ContactItemText>
+            </ContactDescCont>
+          </ContactItemCont>
+
+          <ContactItemCont>
+            <LocationCityRoundedIcon sx={{ fontSize: "2.5rem" }} />
+            <ContactDescCont>
+              <ContactItemTittle>Location:</ContactItemTittle>
+              <ContactItemText>Lagos, Nigeria</ContactItemText>
+            </ContactDescCont>
+          </ContactItemCont>
+
+          <ContactItemCont>
+            <CallRoundedIcon sx={{ fontSize: "2.5rem" }} />
+            <ContactDescCont>
+              <ContactItemTittle>Call Me:</ContactItemTittle>
+              <ContactItemText>+234 704 622 0065</ContactItemText>
+            </ContactDescCont>
+          </ContactItemCont>
+
+          <ContactItemCont>
+            <MarkEmailReadRoundedIcon sx={{ fontSize: "2.5rem" }} />
+            <ContactDescCont>
+              <ContactItemTittle>Email Me:</ContactItemTittle>
+              <ContactItemText>lawrenceanthony70@gmail.com</ContactItemText>
+            </ContactDescCont>
+          </ContactItemCont>
         </ContactAddressCont>
-        <ContactFormCont>
-          <ContactHeader align="true">Message Me</ContactHeader>
-        </ContactFormCont>
+
+        <ContactFormCont></ContactFormCont>
       </ContactContainer>
     </MainContainer>
   );

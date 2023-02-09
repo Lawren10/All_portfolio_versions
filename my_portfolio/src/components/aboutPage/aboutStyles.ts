@@ -55,13 +55,15 @@ export const AddressContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 1rem 4rem 1rem 0;
+  width: 100%;
 `;
 
 export const AddressItemCont = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1rem;
+  width: 50%;
 `;
 export const AddressItemTittle = styled.h6`
   color: white;
@@ -74,6 +76,12 @@ export const AddressItemText = styled.p`
   font-size: 1rem;
 `;
 
+export const AddressSocialItemCont = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+`;
 export const DownloadCvBtn = styled.button`
   background-color: ${(props) => props.theme.colors.main};
   border: 1px solid ${(props) => props.theme.colors.main};

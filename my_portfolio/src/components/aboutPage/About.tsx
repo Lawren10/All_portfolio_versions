@@ -21,10 +21,15 @@ import {
   AddressItemCont,
   AddressItemTittle,
   AddressItemText,
+  AddressSocialItemCont,
   DownloadCvBtn,
 } from "./aboutStyles";
 
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 function About() {
   let { dispatch } = usePortfolioGlobalContext();
@@ -85,7 +90,12 @@ function About() {
 
               <AddressItemCont>
                 <AddressItemTittle>Socials:</AddressItemTittle>
-                <AddressItemText></AddressItemText>
+                <AddressSocialItemCont>
+                  <FacebookIcon />
+                  <TwitterIcon />
+                  <LinkedInIcon />
+                  <GitHubIcon />
+                </AddressSocialItemCont>
               </AddressItemCont>
             </AddressContainer>
 
