@@ -62,7 +62,7 @@ function About() {
               I'm a Software Engineer and Web developer
             </AboutResponse>
             <AboutParagraph>
-              I am a freelancer based in the United Kingdom and i have been
+              I am a software developer based in Nigeria and i have been
               building noteworthy UX/UI designs and websites for years, which
               comply with the latest design trends. I help convert a vision and
               an idea into meaningful and useful products. Having a sharp eye
