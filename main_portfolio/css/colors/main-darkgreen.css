@@ -1,13 +1,5 @@
-/*!
-  * Item: Kitzu
-  * Description: Personal Portfolio Template
-  * Author/Developer: Exill
-  * Author/Developer URL: https://themeforest.net/user/exill
-  * Version: v1.0.2
-  * License: Themeforest Standard Licenses: https://themeforest.net/licenses
-  */
 :root {
-  --custom: #009e66;
+  --custom: #18e0ff;
 }
 
 .table-custom,
@@ -172,40 +164,41 @@ a.text-custom:hover {
 }
 
 ::-moz-selection {
-  background-color: #009e66;
+  background-color: #18e0ff;
   color: #fff;
 }
 
 ::selection {
-  background-color: #009e66;
+  background-color: #18e0ff;
   color: #fff;
 }
 
 a:not(.btn) {
-  color: #009e66;
+  color: #18e0ff;
 }
 
 a:not(.btn):focus,
 a:not(.btn):hover {
-  color: #005235;
+  color: #217c8a;
 }
 
 .color-scheme {
-  color: #009e66;
+  color: #18e0ff;
 }
 
 .background-scheme {
-  background-color: #009e66;
+  background-color: #18e0ff;
 }
 
 .btn.button-scheme {
-  background-color: #009e66 !important;
-  border: 1px solid #009e66 !important;
+  background-color: #18e0ff !important;
+  border: 1px solid #18e0ff !important;
 }
 
-.btn.button-scheme:focus {
-  background-color: #005235 !important;
-  border-color: #005235 !important;
+.btn.button-scheme:focus,
+.btn.button-scheme:hover {
+  background-color: #217c8a !important;
+  border-color: #217c8a !important;
   box-shadow: none !important;
 }
 
@@ -225,11 +218,12 @@ a:not(.btn):hover {
   .lightbox-content
   .section-heading.page-heading
   > .animated-bar {
-  background-color: #009e66;
+  background-color: #18e0ff;
+  /* 009e66; */
 }
 
 #about .info-section .info-content .content-subtitle {
-  color: #009e66;
+  color: #18e0ff;
 }
 
 #about .info-section .info-content .content-follow li a:focus,
@@ -238,11 +232,11 @@ a:not(.btn):hover {
 }
 
 #about .services-section .single-service:hover {
-  border-bottom-color: #009e66;
+  border-bottom-color: #18e0ff;
 }
 
 #about .services-section .single-service .service-icon {
-  color: #009e66;
+  color: #18e0ff;
 }
 
 #about .testimonials-section .single-review .review-icon {
@@ -254,15 +248,15 @@ a:not(.btn):hover {
 }
 
 #resume .resume-section .resume-item {
-  border-left-color: #009e66;
+  border-left-color: #18e0ff;
 }
 
 #resume .resume-section .resume-item .item-arrow:before {
-  background-color: #009e66;
+  background-color: #18e0ff;
 }
 
 #resume .resume-section .resume-item .item-arrow:after {
-  border-left-color: #009e66;
+  border-left-color: #18e0ff;
 }
 
 #resume .skills-section .single-skill .skill-progress .progress-bar {
@@ -271,12 +265,12 @@ a:not(.btn):hover {
 
 #portfolio .portfolio-section .filter-control > li.tab-active,
 #portfolio .portfolio-section .filter-control > li:hover {
-  color: #00bd7a;
+  color: #18e0ff;
 }
 
 #portfolio .portfolio-section .filter-control > li.tab-active:before,
 #portfolio .portfolio-section .filter-control > li:hover:before {
-  background-color: #00bd7a;
+  background-color: #18e0ff;
 }
 
 #portfolio
@@ -297,5 +291,5 @@ a:not(.btn):hover {
 }
 
 #contact .contact-section .contact-info .list-info .info-icon i {
-  color: #009e66;
+  color: #18e0ff;
 }
