@@ -82,6 +82,7 @@ hr {
   color: #fff;
 }
 
+/* custom css begin  */
 .element-cover-bg {
   /* background: url(../img/skills/home.jpg);
   background-position: 20% 0;
@@ -93,18 +94,35 @@ hr {
   position: relative;
 }
 
+.element-overlay-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: url(../img/backgrounds/slider.jpg);
+  background-repeat: repeat;
+  /* background-size: contain; */
+  background-attachment: fixed;
+  mix-blend-mode: multiply;
+  filter: grayscale();
+  opacity: 0.12;
+}
+
 .element-home-cover {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   right: 0;
-  background: url(../img/backgrounds/home.jpg);
+  background: url(../img/backgrounds/home2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   background-attachment: fixed;
   mix-blend-mode: multiply;
-  opacity: 0.5;
+  filter: grayscale();
+  opacity: 1;
 }
 
 .element-about-cover {
@@ -113,12 +131,13 @@ hr {
   height: 100%;
   top: 0;
   right: 0;
-  background: url(../img/backgrounds/about.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url(../img/backgrounds/about1.jpg);
+  background-repeat: repeat;
+  background-size: contain;
   background-attachment: fixed;
   mix-blend-mode: multiply;
-  opacity: 0.5;
+  filter: grayscale();
+  opacity: 1;
 }
 
 .element-resume-cover {
@@ -127,12 +146,13 @@ hr {
   height: 100%;
   top: 0;
   right: 0;
-  background: url(../img/backgrounds/resume.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url(../img/backgrounds/resume1.jpg);
+  background-repeat: repeat;
+  background-size: contain;
   background-attachment: fixed;
   mix-blend-mode: multiply;
-  opacity: 0.5;
+  filter: grayscale();
+  opacity: 1;
 }
 
 .element-portfolio-cover {
@@ -141,12 +161,28 @@ hr {
   height: 100%;
   top: 0;
   right: 0;
-  background: url(../img/backgrounds/portfolio.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url(../img/backgrounds/portfolio1.jpg);
+  background-repeat: repeat;
+  background-size: contain;
   background-attachment: fixed;
   mix-blend-mode: multiply;
-  opacity: 0.5;
+  filter: grayscale();
+  opacity: 1;
+}
+
+.element-contact-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: url(../img/backgrounds/contact.jpg);
+  background-repeat: repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  mix-blend-mode: multiply;
+  filter: grayscale();
+  opacity: 1;
 }
 
 .element-noise {
@@ -204,6 +240,22 @@ hr {
   font-size: 0.8rem;
   color: #9f9f9f;
 }
+
+.modal-content {
+  /* width: 100%; */
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-modal-body {
+  width: 60%;
+  padding: 1.5rem 2rem;
+  background-color: #111;
+}
+
+/* custom css end  */
 
 @-webkit-keyframes fadeIn {
   from {
@@ -1011,6 +1063,23 @@ hr {
   color: #fff;
   font-size: 3rem;
   font-weight: 900;
+  width: auto;
+  background: linear-gradient(
+    to right,
+    #f94144,
+    #f3722c,
+    #f8961e,
+    #f9844a,
+    #f9c74f,
+    #90be6d,
+    #43aa8b,
+    #4d908e,
+    #577590,
+    #277da1
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .home-area .home-headline {
@@ -1832,6 +1901,12 @@ hr {
     .content-title {
     font-size: 14px;
   }
+
+  .custom-modal-body {
+    width: 95%;
+    height: 95vh;
+    overflow-y: scroll;
+  }
 }
 
 #blog .blog-section .single-post {
@@ -2098,6 +2173,14 @@ hr {
   color: #797979 !important;
 }
 
+.for_mobile {
+  display: none;
+}
+
+.for_large_Screen {
+  display: block;
+}
+
 @media (max-width: 1199.98px) {
   #contact .contact-section .contact-form .form-group {
     margin-bottom: 35px;
@@ -2117,5 +2200,13 @@ hr {
 @media (max-width: 767.98px) {
   #contact .contact-section .contact-info .info-description {
     font-size: 14px;
+  }
+
+  .for_mobile {
+    display: block;
+  }
+
+  .for_large_Screen {
+    display: none !important;
   }
 }

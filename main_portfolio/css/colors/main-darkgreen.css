@@ -1,5 +1,5 @@
 :root {
-  --custom: #18e0ff;
+  --custom: #217c8a;
 }
 
 .table-custom,
@@ -164,41 +164,41 @@ a.text-custom:hover {
 }
 
 ::-moz-selection {
-  background-color: #18e0ff;
+  background-color: #217c8a;
   color: #fff;
 }
 
 ::selection {
-  background-color: #18e0ff;
+  background-color: #217c8a;
   color: #fff;
 }
 
 a:not(.btn) {
-  color: #18e0ff;
+  color: #217c8a;
 }
 
 a:not(.btn):focus,
 a:not(.btn):hover {
-  color: #217c8a;
+  color: #1b5f69;
 }
 
 .color-scheme {
-  color: #18e0ff;
+  color: #217c8a;
 }
 
 .background-scheme {
-  background-color: #18e0ff;
+  background-color: #217c8a;
 }
 
 .btn.button-scheme {
-  background-color: #18e0ff !important;
-  border: 1px solid #18e0ff !important;
+  background-color: #217c8a !important;
+  border: 1px solid #217c8a !important;
 }
 
 .btn.button-scheme:focus,
 .btn.button-scheme:hover {
-  background-color: #217c8a !important;
-  border-color: #217c8a !important;
+  background-color: #1b5f69 !important;
+  border-color: #1b5f69 !important;
   box-shadow: none !important;
 }
 
@@ -218,25 +218,37 @@ a:not(.btn):hover {
   .lightbox-content
   .section-heading.page-heading
   > .animated-bar {
-  background-color: #18e0ff;
+  background: linear-gradient(
+    to right,
+    #f94144,
+    #f3722c,
+    #f8961e,
+    #f9844a,
+    #f9c74f,
+    #90be6d,
+    #43aa8b,
+    #4d908e,
+    #577590,
+    #277da1
+  );
   /* 009e66; */
 }
 
 #about .info-section .info-content .content-subtitle {
-  color: #18e0ff;
+  color: #217c8a;
 }
 
 #about .info-section .info-content .content-follow li a:focus,
 #about .info-section .info-content .content-follow li a:hover {
-  color: #009e66;
+  color: #217c8a;
 }
 
 #about .services-section .single-service:hover {
-  border-bottom-color: #18e0ff;
+  border-bottom-color: #217c8a;
 }
 
 #about .services-section .single-service .service-icon {
-  color: #18e0ff;
+  color: #217c8a;
 }
 
 #about .testimonials-section .single-review .review-icon {
@@ -248,15 +260,15 @@ a:not(.btn):hover {
 }
 
 #resume .resume-section .resume-item {
-  border-left-color: #18e0ff;
+  border-left-color: #217c8a;
 }
 
 #resume .resume-section .resume-item .item-arrow:before {
-  background-color: #18e0ff;
+  background-color: #217c8a;
 }
 
 #resume .resume-section .resume-item .item-arrow:after {
-  border-left-color: #18e0ff;
+  border-left-color: #217c8a;
 }
 
 #resume .skills-section .single-skill .skill-progress .progress-bar {
@@ -265,12 +277,12 @@ a:not(.btn):hover {
 
 #portfolio .portfolio-section .filter-control > li.tab-active,
 #portfolio .portfolio-section .filter-control > li:hover {
-  color: #18e0ff;
+  color: #217c8a;
 }
 
 #portfolio .portfolio-section .filter-control > li.tab-active:before,
 #portfolio .portfolio-section .filter-control > li:hover:before {
-  background-color: #18e0ff;
+  background-color: #217c8a;
 }
 
 #portfolio
@@ -291,5 +303,5 @@ a:not(.btn):hover {
 }
 
 #contact .contact-section .contact-info .list-info .info-icon i {
-  color: #18e0ff;
+  color: #217c8a;
 }
