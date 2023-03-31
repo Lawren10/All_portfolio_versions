@@ -250,9 +250,42 @@ hr {
 }
 
 .custom-modal-body {
-  width: 60%;
+  width: 90%;
+  height: 40rem;
   padding: 1.5rem 2rem;
   background-color: #111;
+  font-size: 0.8rem;
+  overflow-y: scroll;
+}
+
+.custom-modal-body::-webkit-scrollbar {
+  width: 2px;
+}
+
+.custom-modal-body::-webkit-scrollbar-track {
+  background-color: transparent;
+  border: 0.5rem;
+}
+
+.custom-modal-body::-webkit-scrollbar-thumb {
+  background-color: #eee;
+  border: 0.5rem;
+  width: 2px;
+}
+
+.custom-modal-body ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.iframeStyle {
+  width: 100%;
+  height: 25rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
 }
 
 /* custom css end  */
@@ -1062,6 +1095,29 @@ hr {
 .home-name-custom {
   color: #fff;
   font-size: 3rem;
+  font-weight: 900;
+  width: auto;
+  background: linear-gradient(
+    to right,
+    #f94144,
+    #f3722c,
+    #f8961e,
+    #f9844a,
+    #f9c74f,
+    #90be6d,
+    #43aa8b,
+    #4d908e,
+    #577590,
+    #277da1
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-name-custom-desc {
+  color: #fff;
+  font-size: 1.5rem;
   font-weight: 900;
   width: auto;
   background: linear-gradient(
@@ -1906,6 +1962,7 @@ hr {
     width: 95%;
     height: 95vh;
     overflow-y: scroll;
+    font-size: 0.8rem;
   }
 }
 
